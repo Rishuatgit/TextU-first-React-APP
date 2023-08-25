@@ -8,6 +8,8 @@ export default function TextForm(prop) {
         setText("hello this is  set text")
         let uptext = text.toUpperCase();
         setText(uptext)
+        prop.showAlert("Text has been converted into upperCase","success")
+
     }
 
     const handleloClick = (v) => {
@@ -18,6 +20,7 @@ export default function TextForm(prop) {
     const handleOnchange = (v) => {
         console.log("handle on change");
         setText(v.target.value)
+        
 
     }
     const handleToClear = (v) => {
